@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Tamal de salsa verde",
+    "description": "Tamal en hoja de maiz, con pollo",
+    "code": "a1",
+    "price": 30,
+    "status": true,
+    "stock": 100,
+    "category": "Tamales",
+    "thumbnails": []
+  },
+  {
+    "id": 2,
+    "title": "Tamal de salsa roja",
+    "description": "Tamal en hoja de maiz, con puerco",
+    "code": "a2",
+    "price": 30,
+    "status": true,
+    "stock": 50,
+    "category": "Tamales",
+    "thumbnails": []
+  },
+  {
+    "id": 3,
+    "title": "Atole de guayaba",
+    "description": "Delicioso atole hecho con guayabas frescas",
+    "code": "b1",
+    "price": 25,
+    "status": true,
+    "stock": 30,
+    "category": "Atole",
+    "thumbnails": []
+  },
+  {
+    "id": 4,
+    "title": "Atole de galleta",
+    "description": "Atole hecho con galletas de vainilla",
+    "code": "b2",
+    "price": 20,
+    "status": true,
+    "stock": 70,
+    "category": "Atole",
+    "thumbnails": []
+  }
+]

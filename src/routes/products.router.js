@@ -1,10 +1,9 @@
-import { Router } from "express";
-const router = Router();
+import express from "express";
+const router = express.Router();
 
 import ProductManager from "../managers/product-manager.js";
 const productManager = new ProductManager("./src/data/products.json");
 
-//1) Listar todos los productos.
 router.get("/", async (req, res) => {
   try {
     const limit = req.query.limit;
@@ -22,7 +21,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-//2) Traer solo un producto por id:
 router.get("/:pid", async (req, res) => {
   const id = req.params.pid;
 
@@ -43,7 +41,6 @@ router.get("/:pid", async (req, res) => {
   }
 });
 
-//3) Agregar nuevo producto:
 router.post("/", async (req, res) => {
   const newProduct = req.body;
 
@@ -60,13 +57,12 @@ router.post("/", async (req, res) => {
   }
 });
 
-//4) Actualizar por ID
 router.put("/:pid", async (req, res) => {
   const id = req.params.pid;
   const updatedProduct = req.body;
 
   try {
-    await productManager.updateProduct(parseInt(id), productoActualizado);
+    await productManager.updateProduct(parseInt(id), updatedProduct);
     res.json({
       message: "Product was successfully updated",
     });
@@ -78,7 +74,6 @@ router.put("/:pid", async (req, res) => {
   }
 });
 
-//5) Eliminar producto:
 router.delete("/:pid", async (req, res) => {
   const id = req.params.pid;
 
