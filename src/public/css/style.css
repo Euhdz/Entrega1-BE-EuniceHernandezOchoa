@@ -1,0 +1,13 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+.productsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.productsContainer div {
+  border: 1px;
+}

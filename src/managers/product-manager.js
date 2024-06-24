@@ -35,7 +35,7 @@ class ProductManager {
         status: true,
         stock,
         category,
-        thumbnails: thumbnails || [],
+        thumbnails: "No images yet",
       };
       if (existingProducts.length > 0) {
         ProductManager.ultId = existingProducts.reduce(
