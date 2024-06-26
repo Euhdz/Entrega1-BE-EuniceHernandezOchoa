@@ -53,5 +53,16 @@
     "category": "Tamales",
     "thumbnails": "No images yet",
     "id": 5
+  },
+  {
+    "title": "Atole de chocolate",
+    "description": "Atole artesanal de cacao orgánico",
+    "code": "b3",
+    "price": "25",
+    "status": true,
+    "stock": "10",
+    "category": "Atole",
+    "thumbnails": "No images yet",
+    "id": 6
   }
 ]
